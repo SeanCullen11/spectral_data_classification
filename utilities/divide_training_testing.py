@@ -89,10 +89,8 @@ def copy_images_to_new_directories(directory, categories, data_groups):
    """
 
     for d in range(0, len(data_groups)):
-        # data = data_groups[d]
         data_df = pd.DataFrame(data_groups[d])
         data_df = data_df.drop(['Unnamed: 0', 'file_names', 'accession', 'type'], axis=1)
-        # 'species',
         if d % 2 == 0:
             if d < 2:
                 name = categories[0].replace(".csv", "")
