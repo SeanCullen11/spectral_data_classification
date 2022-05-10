@@ -23,7 +23,7 @@ class ModelTrainer:
 
 
     def train_and_save_all_models(self, images: TrainingData):
-        data_groups = zip(images.training_image_set, images.validation_image_set)
+        data_groups = zip(images.training_data_set, images.validation_data_set)
         for index, (training_set, validation_set) in enumerate(data_groups):
             self.curr_index = index
             self.train_model(training_set, validation_set)

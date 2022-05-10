@@ -45,7 +45,7 @@ for necessary Python packages.
 - **Output**:
     - Directory `saved_models` is created in current working directory, which will contain one model file per fold (file name format: `CNN_#.model`).
 
-- **Example execution (CNN)**: `python train_models_classification.py Model_1_intric_thym\training -lr 0.005 -f 1 -e 10 -cls 2`
+- **Example execution (CNN)**: `python train_models_classification.py Model_1_intric_thym\training -lr 0.005 -f 1 -e 50 -cls 2`
 
 2. Classifying images after the model has been trained has not been implemented yet
 
