@@ -28,7 +28,21 @@ This code has been tested in Python 3.9.4 in Windows and Ubuntu, using Anaconda
 for virtual environments.  Please consult `requirements.txt` or the list below 
 for necessary Python packages.
 
-#### Tested Package Versions:
+#### Tested Package Versions (For now):
+- pandas~=1.4.1
+- numpy~=1.21.5
+- tensorflow~=2.5.0
+- opencv-python~=4.5.5.64
+- requests~=2.27.1
+
+### Structure basis
+This repo is largely based off the field_classification repo developed by Beth McDonald (emcdona1, Field Museum, former NEIU), Sean Cullen (SeanCullen11, NEIU) and Allison Chen (allisonchen23, UCLA).
+
+Field classification repo is also a CNN structure, but it is used to classify leaf image 
+
+Link to field_classification repo:
+https://github.com/emcdona1/field_classification 
+
 
 ## Workflow
 1. Run `train_models_image_classification.py`, using arguments to specify image sets and hyper-parameters.

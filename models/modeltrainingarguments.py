@@ -9,7 +9,7 @@ class ModelTrainingArguments:
         self._parser = argparse.ArgumentParser('Create and train NNs for image classification.')
         self._args: argparse.Namespace = self.set_up_parser_arguments()
         self.training_image_folder: Path = self._validate_training_folder()
-        # self.dataframe_dim: Tuple[int, int] = self._validate_dataframe_dim()
+        self.dataframe_dim: Tuple[int, int] = self._validate_dataframe_dim()
         self.lr: float = self._validate_learning_rate()
         self.n_folds: int = self._validate_n_folds()
         self.n_epochs: int = self._validate_n_epochs()
