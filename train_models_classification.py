@@ -17,7 +17,7 @@ def main() -> None:
     cnn_arguments = ModelTrainingArguments()
     training_data = TrainingData(SEED)
 
-    training_data.load_training_images(cnn_arguments.training_image_folder,
+    training_data.load_training_data(cnn_arguments.training_image_folder,
                                     shuffle=True, n_folds=cnn_arguments.n_folds)
 
     architecture = CNNStructure(SEED, cnn_arguments.lr, [], 2)

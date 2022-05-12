@@ -60,9 +60,9 @@ https://github.com/emcdona1/field_classification
 - **Output**:
     - Directory `saved_models` is created in current working directory, which will contain one model file per fold (file name format: `CNN_#.model`).
 
-- **Example execution (CNN)**: `python train_models_classification.py Model_1_intric_thym\training -lr 0.005 -f 1 -e 50 -cls 2`
+- **Example execution (CNN)**: `python train_models_classification.py datasets\Model_1_intric_thym\training -lr 0.005 -f 1 -e 50 -cls 2`
 
-2. Classifying images after the model has been trained has not been implemented yet
+2. Testing models after the model has been trained has not been implemented yet but the implementation exists in field_classification
 
 ## Todo
 1. Finish converting repo to fit new data sets
@@ -72,7 +72,7 @@ https://github.com/emcdona1/field_classification
    1. `train_models_classification.py` - change CNN structure function call to take in the inputted arguments 
    2. `cnnmodel.py` - uncomment input shape and make the shape the dimensions of the CSV
    3. `modeltrainingarguments.py` - uncomment dataframe_dim and make the shape the dimensions of the CSV and complete the validate method
-3. Implement testing models after they are trained by using `classify_images_by_vote.py` as a reference 
+3. Implement testing models after they are trained by using `classify_images_by_vote.py` as a reference in field_classification
 4. Visualization
    1. The functionality to add graphs exists in the `model_training.py` and is currently commented out in validate_model_at_epoch_end. This can be added later using the graph script from field_classification
 
